@@ -7,6 +7,7 @@ env = environ.Env()
 environ.Env.read_env()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+NPM_BIN_PATH = r"C:\\Program Files\\nodejs\\npm.cmd"
 
 
 # Quick-start development settings - unsuitable for production
@@ -32,6 +33,14 @@ INSTALLED_APPS = [
     
     'core',
     'blog',
+    
+    'tailwind',
+    'theme',
+]
+
+TAILWIND_APP_NAME = 'theme'
+INTERNAL_IPS = [
+    "127.0.0.1",
 ]
 
 MIDDLEWARE = [
